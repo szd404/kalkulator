@@ -5,8 +5,6 @@
 using namespace std;
 
 vector<int> oceny;
-int ob = 0;
-int dni = 0;
 
 inline int min(vector<int> v)
 {
@@ -139,12 +137,12 @@ int main()
     {
         case '1':
         {
-            cout << "Aby wyjsc nic nie wpisuj i nacisnij enter" << endl;
+            cout << "Aby powrocic do menu nalezy nacisnac enter" << endl;
             cout << "Dodaj oceny: " << endl;
 
             oceny.clear();
 
-            string a;
+            string a = "";
             while (getline(cin, a))
             {
                 if (a.empty() || a == "")
@@ -160,7 +158,8 @@ int main()
                 }
                 catch(const exception& e)
                 {
-                    b = 0;
+                    cout << "Wpisz poprawna liczbe." << endl;
+                    continue;
                 }
 
                 if (b > 6 || b < 1)
