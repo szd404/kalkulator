@@ -50,7 +50,7 @@ inline int srednia(vector<int> v)
 
 void wypiszOceny()
 {
-    if (oceny.size() == 0)
+    if (oceny.empty())
     {
         return;
     }
@@ -156,7 +156,7 @@ int main()
                 {
                     b = stoi(a);
                 }
-                catch(const exception& e)
+                catch (const exception& e)
                 {
                     cout << "Wpisz poprawna liczbe." << endl;
                     continue;
@@ -178,7 +178,7 @@ int main()
         }
         case '2':
         {
-            if (oceny.size() == 0)
+            if (oceny.empty())
             {
                 cout << "Nie masz zadnych ocen." << endl;
                 break;
@@ -198,7 +198,7 @@ int main()
         }
         case '3':
         {
-            if (oceny.size() == 0)
+            if (oceny.empty())
             {
                 cout << "Nie masz zadnych ocen." << endl;
                 break;
@@ -209,7 +209,7 @@ int main()
         }
         case '4':
         {
-            if (oceny.size() == 0)
+            if (oceny.empty())
             {
                 cout << "Nie masz zadnych ocen." << endl;
                 break;
@@ -235,7 +235,7 @@ int main()
         }
         case '6':
         {
-            if (oceny.size() == 0)
+            if (oceny.empty())
             {
                 cout << "Nie dodales zadnych ocen. Jezeli zadnej nie masz to nie zdales." << endl;
                 break;
