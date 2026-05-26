@@ -237,7 +237,7 @@ int main()
         {
             if (oceny.empty())
             {
-                cout << "Nie dodales zadnych ocen. Jezeli zadnej nie masz to nie zdales." << endl;
+                cout << "Nie dodales zadnych ocen. Jezeli zadnej nie masz to nie zdajesz." << endl;
                 break;
             }
 
