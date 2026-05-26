@@ -144,16 +144,9 @@ int main()
 
             oceny.clear();
 
-            int i = 0;
             string a;
             while (getline(cin, a))
             {
-                if (i == 0)
-                {
-                    i++;
-                    //continue;
-                }
-
                 if (a.empty() || a == "")
                 {
                     break;
@@ -179,8 +172,6 @@ int main()
                 oceny.push_back(b);
 
                 cout << "Dodano " << b << endl;
-
-                i++;
             }
 
             wypiszOceny();
